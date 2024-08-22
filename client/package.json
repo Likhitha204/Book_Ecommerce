@@ -11,7 +11,10 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "express": "^4.18.2",
+    "webpack": "^5.75.0",
+    "babel-loader": "^8.2.5"
   },
   "devDependencies": {
     "eslint": "^8.29.0",
