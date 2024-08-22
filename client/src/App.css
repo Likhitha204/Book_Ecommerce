@@ -23,7 +23,7 @@
 .product-card {
   border-radius: 8px;
   width: 250px;
-  height:400px;
+  height:450px;
   padding: 16px;
   margin: 16px;
   background-color: #445a5d;
@@ -48,9 +48,11 @@
 .product-details {
   border-radius: 8px;
   text-align: center;
-  color:rgb(190 209 106); 
+  color:rgb(210, 249, 36); 
 }
-
+.product-details h3{
+  color:aqua;
+}
 .product-details button{
   background-color:#8495b0;
   margin-bottom: 10px;
