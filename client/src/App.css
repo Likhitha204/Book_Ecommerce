@@ -50,6 +50,7 @@
   text-align: center;
   color:rgb(190 209 106); 
 }
+
 .product-details button{
   background-color:#8495b0;
   margin-bottom: 10px;
@@ -153,7 +154,7 @@ h2 {
   padding: 5px 10px;
   font-size:3rem;
 }
-h3{
+.title h3{
   font-size: 25px;
 }
 .header {
