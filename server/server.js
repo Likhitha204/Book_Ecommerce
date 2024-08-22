@@ -3,7 +3,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 5000;
 const cors = require('cors');
 
 mongoose.connect('mongodb://localhost:27017/book_store');
