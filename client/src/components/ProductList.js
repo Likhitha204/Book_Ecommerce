@@ -7,12 +7,12 @@ import { itemContext } from "../context/ItemContext";
 const ProductList = () => {
     const { products } = useContext(itemContext);
     // Keep a local state for sorted products
-    const [sortedProducts, setSortedProducts] = useState([...products]);     
+    const [sortedProducts, setSortedProducts] = useState([...products]);
     const [minPrice, setMinPrice] = useState(0);
     const [maxPrice, setMaxPrice] = useState(3000);
     // 'all' represents no type filter
-    const [selectedType, setSelectedType] = useState("all"); 
-    
+    const [selectedType, setSelectedType] = useState("all");
+
     useEffect(() => {
         setSortedProducts([...products]);
     }, [products]);
