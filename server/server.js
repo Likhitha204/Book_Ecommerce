@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const cors = require('cors');
 
-mongoose.connect('mongodb://127.0.0.1:27017/yourdbname', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost:27017/book_store');
 
 app.use(express.json());
 app.use(cors()); // Use the cors middleware
