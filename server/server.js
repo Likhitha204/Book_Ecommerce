@@ -6,12 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const cors = require('cors');
 
-mongoose.connect('mongodb://localhost:27017/books',{ useNewUrlParser: true, useUnifiedTopology: true })
-.catch(err => {
-  console.error('MongoDB connection error:', err);
-  process.exit(1); // Exit process with failure
-});
-
+mongoose.connect('mongodb://127.0.0.1:27017/yourdbname', { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(express.json());
 app.use(cors()); // Use the cors middleware
