@@ -6,8 +6,11 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const cors = require('cors');
 
-mongoose.connect('mongodb://localhost:27017/book_store');
+const mongoURI = 'mongodb://localhost:27017/book_store';
 
+mongoose.connect(mongoURI, {
+    serverSelectionTimeoutMS: 30000 // Increase timeout to 30 seconds
+})
 app.use(express.json());
 app.use(cors()); // Use the cors middleware
 
